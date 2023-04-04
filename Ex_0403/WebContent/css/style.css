@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.a1{
+		font-size : 30px; /*글자 크기*/
+}
+.a2{
+	font-style : italic; /*기본값 : normal*/
+}
+.a3{
+	font-weight : bold; /*기본값 : normal*/
+}
+.a4{
+	font-family : "궁서","굴림","sans-serif";
+	/*여러가지 글꼴을 준비해두고 브라우저에서 지원한다면 그것을 사용하되, 
+	지원하지 않는다면 가장 표준적인 글꼴인 sans-serif를 사용한다.*/
+}
+	/*weight, style, size, font-family */	
+.a5{
+	font : bold italic 30px "궁서","돋움",sans-serif;
+}
+
+/* normal : 소문자를 작은 대문자로 바꾸지 않는다.
+	small-caps : 소문자를 작은 대문자로 바꾼다.
+	initial : 기본값으로 설정한다.
+	inherit : 부모 요소의 속성값을 상속받습니다.*/
+.a6{
+	font-variant:small-caps;
+}

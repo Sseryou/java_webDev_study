@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<style type="text/css">
+			#header{
+				width : 1000px;
+				height : 80px;
+				border : 1px solid blue;
+				margin : 10px auto;
+				position : relative;
+			}
+			/*position의 값
+				static : 기본값, 문서의 기본적인 흐름을 따른다.
+				relative : static과 유사하나 원래 위치에서 주어진 값만큼 이동한다.
+				top, right, bottom, left 속성을 이용해 위치 조절이 가능하다.
+				top : 5px; -> 아래로 5px 이동
+				
+				absolute : 기본 흐름을 따르지 않고 부모 요소의 상대적위치로 지정된다.
+				부모 요소의 position이 relative, absolute, fixed인 태그가 있다면
+				부모 요소의 기준으로 움직인다.
+				부모 요소의 position이 static이라면 body태그를 기준으로 배치된다.
+				부모 요소가 없다면 body를 기준으로 배치된다.
+				
+				fixed : fixed는 화면의 스크롤이나 움직임에 관계없이 
+				화면의 특정 부분에 고정되는 position이다.
+				*/
+			.aa{
+				position: absolute;
+				left:0; top:7px;
+			}
+			ul{
+				overflow : hidden;
+			}
+			li{
+				float : left;
+			}
+			
+			.a1{
+				position : absolute;
+				left : 350px; top : 10px;
+			}
+			.a2{
+				position : absolute;
+				left : 225px; top : 40px;
+			}
+			p:last-child{
+				position: absolute;
+				right : 10px; top : 5px;
+			}
+			
+		
+		</style>
+		
+	</head>
+	<body>
+		<div id="header">
+			<p class="aa">
+				<img alt="이미지" src="image/acid2Test.jpg" width="70" height="60">
+			</p>
+			<ul class="a1">
+				<li><img src="image/menu_13.jpg"/></li>
+				<li><img src="image/menu_14.jpg"/></li>
+				<li><img src="image/menu_15.jpg"/></li>
+				<li><img src="image/menu_16.jpg"/></li>
+				<li><img src="image/menu_17.jpg"/></li>
+				<li><img src="image/menu_18.jpg"/></li>
+				<li><img src="image/menu_19.jpg"/></li>
+				<li><img src="image/menu_20.jpg"/></li>
+				<li><img src="image/menu_21.jpg"/></li>	
+			</ul>
+			
+			<ul class="a2">
+				<li><img src="image/menu01_12.jpg"/></li>
+				<li><img src="image/menu01_13.jpg"/></li>
+				<li><img src="image/menu01_14.jpg"/></li>
+				<li><img src="image/menu01_15.jpg"/></li>
+				<li><img src="image/menu01_16.jpg"/></li>
+				<li><img src="image/menu01_17.jpg"/></li>
+				<li><img src="image/menu01_18.jpg"/></li>
+				<li><img src="image/menu01_19.jpg"/></li>
+			</ul>
+			
+			<p><img src="image/img_standards.gif"></p>
+				
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>후손 선택자</title>
+		<style type="text/css">
+			/*공백 기호는 후손선택자로서 해당 아이디를 가진 하위 요소들이 모두 영향을 받는다.*/
+			/*
+			#header h1{color : red;}
+			#contents h1 {color : blue;}*/
+			
+			/*태그 > 태그 : 자식 선택자는 직계자식에만 속성을 적용*/
+			#header > h1{
+				color:red;
+			}
+			#contents > h1 {
+				color:blue;
+			}
+		
+		</style>
+		
+		
+	</head>
+	
+	
+	<body>
+		<div id="header">
+			<h1>나는 Header의 자식</h1>
+			<div id="nav">
+				<h1>navigation</h1>
+			</div>
+			<div id="nav1">
+				<h1>navigation</h1>
+			</div>
+		</div>
+		
+		<div id="contents">
+			<h1>contents의 자식</h1>
+		</div>
+		
+		
+	</body>
+</html>

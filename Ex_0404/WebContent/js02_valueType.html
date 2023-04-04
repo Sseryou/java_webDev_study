@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<script type="text/javascript">
+		//var, let, const
+		//var : 같은 이름의 변수가 만들어 졌을 때 감지하지 못한다.
+		//let : 같은 이름의 변수가 만들어 졌을 때 감지한다.
+		//값을 새롭게 대입하는것도 가능하다.
+		//const : 일종의 상수와 같은 자료형, 값을 다시 대입하는것은 불가능
+		
+		var num1 = 100;
+		var num2 = 200;
+		
+		var num3 = "100 + 200 : " + (num1+num2);
+		
+		document.write(num3 + "<br>");
+		
+		num3 = 50; //정수형 변수로 바뀜
+		
+		
+		//자바스크립트는 문자열과 문자형의 구분이 없다.
+		document.write('안녕하세요<br>');
+		document.write("안녕하세요<br>");
+		
+		var num1 = "안녕하세요";
+		
+		document.write(num1);
+		
+		/* let i1 = 20;
+		let i1 = "안녕하세요"; */
+		
+		//오류도 발생하지 않고, 아무것도 나오지 않는다!
+		//대신 콘솔에선 뜬다...?
+		//document.write(i1);
+		
+		/*문자열 : "", ''
+			숫자 : 숫자(Number) 정수, 실수 구분하지 않음
+			논리형 : true, false
+				false로 판단하는 것들 : false, 0, null,'',undefined
+			null : 변수의 값이 비어있다는 것을 표시할 경우
+			undefined : 변수를 선언하면 기본값은 undefined
+			객체
+			원시값 : 객체를 제외한 모든 값...
+			*/
+		
+		
+		
+		</script>
+		
+		
+	</head>
+	<body>
+	
+	</body>
+</html>

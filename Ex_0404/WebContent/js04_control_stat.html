@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			//조건식의 값이 참, 거짓인지에 따라 제어
+			//if(조건식){
+			//	조건식이 참일때 실행할 명령
+			//}
+			
+			var num = 0;
+			
+			if(!num){
+				document.write("num은 0", "<br>");
+			}
+			document.write("if문 탈출");
+			
+			//switch
+			//비교값과 조건값이 일치하는 곳에서 명령을 실행
+			//switch(비교값){
+			//	case 값1:
+			//	명령;
+			//	break;
+			//	case 값2:
+			//  명령;
+			// 	...
+			//  default:
+			//	명령;
+			//	break;
+			//}
+			
+			document.write("<hr>");
+			//반복문
+			//for, while
+			var dan = 8;
+			
+			for(var i = 1; i <= 9; i++){
+				document.write(dan," X ", i, " = ", (dan*i), "<br>");
+			}
+			document.write("<hr>");
+			
+			//자바스크립트로 html을 제어하는것이 가능하다.
+			for(var i = 6; i >= 1; i--){
+				document.write('<h',i,'>','안녕하세요','</h',i,'>');
+			}
+			
+			document.write("<hr>");
+			
+			document.write("<ul>");
+			
+			for(var i = 0; i < 3; i++){
+				document.write("<li>안녕</li>");
+			}
+			
+			document.write("</ul>");
+			
+			document.write("<hr>");
+			
+			var a = 2;
+			var b = 3;
+			
+			
+			//backtick을 써야 한다. 탭 위에 있는거.. ` `
+			//정규 표현식.
+			document.write(`${a} + ${b} = ${a+b}`);
+			
+			
+				
+			
+		
+		</script>
+		
+	</head>
+	<body>
+	
+	</body>
+</html>

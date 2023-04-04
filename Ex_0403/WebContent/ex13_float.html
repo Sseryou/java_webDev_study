@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<!-- float : '뜨다'라는 의미. 웹페이지에서 요소를 어떻게 띄워서 텍스트와 함께 배치할 것인가에 대한 속성 
+			inherit : 부모 요소에서 상속
+			left : 왼쪽에서 부유하는 블록박스를 생성
+			right : 오른쪽에 부유하는 블록박스를 생성
+			none : 요소를 부유시키지 않음-->
+			
+			<style type="text/css">
+				*{margin:0; padding:0;}
+				
+				#container{margin : 10px auto;
+							padding: 15px;
+							width : 500px;
+							border : 5px solid #caa;
+							background:#fdd;
+							overflow:hidden; 
+							/*자식태그가 float 속성을 가지고 있으면 부모는 대부분 overflow : hidden속성을 가진다.*/
+							}
+							
+							
+				h1{text-align:center;}
+				
+				.div1{ width : 200px;
+						height : 100px;
+						background : #dda;
+						float : left;}		
+				.div2{ width : 200px;
+						height : 100px;
+						background : #dda;
+						float : right;}
+				
+			
+			
+			</style>
+			
+			
+	</head>
+	
+	
+	<body>
+		<div id="container">
+			<h1>float 연습</h1>
+			
+			<div class="div1"><p>float를 통한 정렬 예제</p></div>
+			<div class="div2"><p>float를 통한 정렬 예제</p></div>
+		
+		</div>
+	
+	
+	
+	</body>
+</html>

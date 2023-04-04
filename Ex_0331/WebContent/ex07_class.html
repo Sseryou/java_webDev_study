@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<style>
+		
+			/*특정 클래스를 가진 모든 태그의 색깔 바꾸기*/
+			/* .text{
+			color:red;
+			} */
+			
+			/* text라는 class를 가진 p태그에만 색깔을 주고싶다. 
+				주의사항 : 띄어쓰기 하지 않는다.*/
+			p.text{
+			color:#f00;
+			}
+			h2.text{
+			color:#0f0;
+			}
+			span{
+			color:gray;
+			}
+			/*div 바로 아래에 있는 h2태그의 글자색을 바꾸고 싶다.
+				띄어쓰기를 하게 되면 자식형태 또는 포함관계에 있는 
+				요소들만 선택하게 된다.*/
+			
+			.box h2{
+				color:aqua;
+			}
+			
+			.box h2 span{
+				color:yellow;
+			}
+			.span_blue{
+				color:blue
+			}
+			.span_green{
+				color:green
+			}
+		
+		</style>
+		
+	</head>
+<body>
+
+		<!-- 식별자
+			class : 스타일 변경만을 위해서 사용되는 속성
+					똑같은 태그가 있을 때 구별하기 위한 식별자가 된다. -->
+					
+		<h2 class="text">클래스 연습중</h2>
+		<p class="text2">나는 p태그 입니다.</p>
+		<p class="text">오늘은 금요일 입니다.</p>
+		
+		<div class="box">
+			<h2>클래스 <span>연습중</span>인데요...</h2>
+			<h1>오늘은 3월 31일 금요일 입니다.</h1>
+			<div class="box">
+				<h2>클래스 <span class="span_green">연습중</span> 인데요...2</h2>
+			</div>
+		</div>
+		<h2>클래스 <span class="span_blue">연습중</span> 인데요...3</h2>
+
+</body>
+</html>

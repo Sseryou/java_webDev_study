@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+		
+		p{border : 2px solid red;
+			background: aqua;}
+			
+		.box1{margin : 0;}/*상, 하, 좌, 우 적용*/
+		.box2{margin : 10px 50px;}/*상하, 좌우 적용*/
+		.box3{margin : 30px 50px 30px;}/*상, 좌우, 하 적용*/
+		/*한 마진이 다른쪽 마진과 겹치면 겹치고 적은쪽 마진이 무시된다.*/
+		.box4{margin : 50px 30px 40px 70px;}/*상우하좌 적용*/
+		
+		div{border : 2px solid red;}
+		div{margin : 50px;}
+		
+		</style>
+	</head>
+	
+	<body>
+	
+		<p class="box1">마진 적용 연습중</p>
+		<p class="box2">마진 적용 연습중</p>
+		<p class="box3">마진 적용 연습중</p>
+		<p class="box4">마진 적용 연습중</p>
+		
+		<div class="box5">div 마진</div>
+		<div class="box6">div 마진</div>
+		
+	
+	</body>
+	
+</html>
