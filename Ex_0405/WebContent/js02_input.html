@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			//a태그를 클릭해서 페이지를 이동하는 것은 가능하지만, 데이터를 가져가는것은 불가능하다.
+			//자바스크립트와 밀접한 관련이 있는 input태그는 
+			//사용자가 데이터를 입력할수 있는 입력필드를 정의할 떄 사용합니다.
+			//input태그의 type속성을 다르게 함으로써 여러가지 모양을 나타낼 수 있습니다.
+			//button -> 버튼
+			//password -> 비밀번호 입력하는 필드
+			
+			
+			function func01(){
+				alert("메서드 정상 호출됨");
+			}
+			
+			function func02(){
+				var res = document.getElementById("name");
+				var result = res.value;
+				alert(result);
+			}
+			function func03(){
+				var res = document.getElementById("res").value;
+				var m_div = document.getElementById("m_div");
+				//document.write(res);
+				m_div.innerHTML = res;
+			}
+			//자바스크립트로 요소 가져오는법
+			//id로 가져오기 : getElementById("id값")
+			//태그이름으로 가져오기: getElementByTagName(요소의 태그 이름)
+			//class 이름으로 가져오기 : getElementByClassName("classd이름")
+			//
+		
+		</script>
+		
+	</head>
+	
+	<body>
+		<input type="button" value="버튼1" onclick="func01();">
+		<!-- onclick : 마우스를 눌렀을 때 -->
+		<hr>
+		<input type="text" value="연습" id="name">
+		<input type="button" value="버튼2" onclick="func02();">
+		<hr>
+		<input id="res">
+		<input type="button" value="버튼3" onclick="func03();">
+		<div id="m_div"></div>	
+	
+	</body>
+</html>

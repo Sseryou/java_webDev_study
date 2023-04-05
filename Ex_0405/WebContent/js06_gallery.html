@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			a{text-decoration: none;}
+		</style>
+		
+		<script type="text/javascript">
+			var num = 1;
+			var path = "image/img";
+			function prev(){
+				num--;
+				if(num < 1){
+					num = 7;
+				}
+				//gallery라는 id를 가진 태그의 정보 가져오기
+				var gallery = document.getElementById("gallery");
+				gallery.src = path+num+".jpg";
+			}
+			function next(){
+				num++;
+				if(num > 7){
+					num = 1;
+				}
+				//gallery라는 id를 가진 태그의 정보 가져오기
+				var gallery2 = document.getElementById("gallery");
+				gallery2.src = path+num+".jpg";
+			}
+		
+		</script>
+		
+		
+	</head>
+	
+	<body>
+		<div id="galleryWrap">
+			<p>
+				<a href="#" onclick="prev();">
+					<img alt="이전" src="image/left_btn.png">
+				
+				</a>
+				
+				<img alt="갤러리" id="gallery" src="image/img1.jpg" width="300" height="200">
+				
+				<a href="#" onclick="next();">
+					<img alt="다음" src="image/right_btn.png">
+				
+				</a>		
+		
+			</p>
+		</div>
+	</body>
+</html>
