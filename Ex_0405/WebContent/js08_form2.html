@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			function check(){
+				//form태그에 준 이름을 가지고 바로 검색할 수 있다.
+				
+				var f = document.ff;
+				
+				//var myId = f.m_id.value; //유효성 체크를 하기위해 가져온것
+				//유효성 체크를 하지 않을것이라면 안써도 무방하다.
+				
+				//전송방법
+				//f.method = ;
+				//목적지
+				//f.action = ;
+				//둘 다 이미 form에 포함되어 있다.
+				
+				//전송
+				f.submit();
+				
+			}
+		
+		
+		</script>
+		
+	</head>
+	
+	
+<body>
+		
+		<form name="ff" action="login.jsp" method="GET">	<!-- forms[0] -->
+			<table border="1">
+				<tr>
+					<!-- 서버에서 주고받는 데이터가 되어야 하기 때문에 식별할 수 있게 name 속성을 사용한다.-->
+					<th>ID : </th>
+					<td><input name="m_id" placeholder="아이디를 입력해 주세요."></td>
+				</tr>
+				<tr>
+					<th>PW : </th>
+					<td><input name="m_pw" type="password" placeholder="비밀번호를 입력해 주세요."></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="center">
+						<input type="button" value="전송" onclick="check();">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

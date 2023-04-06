@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			function check(f){
+				f.submit();
+				
+			}
+		
+		</script>
+		
+		
+	</head>
+	
+	
+<body>
+		<form method="GET" action="login.jsp">	<!-- forms[0] -->
+			<table border="1">
+				<tr>
+					<!-- 서버에서 주고받는 데이터가 되어야 하기 때문에 식별할 수 있게 name 속성을 사용한다.-->
+					<th>ID : </th>
+					<td><input name="m_id" placeholder="아이디를 입력해 주세요."></td>
+				</tr>
+				<tr>
+					<th>PW : </th>
+					<td><input name="m_pw" type="password" placeholder="비밀번호를 입력해 주세요."></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="center">
+						<!-- this는 form태그에만 사용할수 있다. -->
+						<!-- this.form은 버튼을 포장하고 있는 form태그를 의미한다. -->
+						<input type="button" value="전송" onclick="check(this.form);">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
